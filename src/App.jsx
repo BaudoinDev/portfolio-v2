@@ -22,7 +22,15 @@ import pharmanetImg2 from "./assets/projects/pharmanet-2.png";
 import pharmanetImg3 from "./assets/projects/pharmanet-3.png";
 import pharmanetImg4 from "./assets/projects/pharmanet-4.png";
 import pharmanetImg5 from "./assets/projects/pharmanet-5.png";
-
+import aliRestoImg1 from "./assets/projects/ali-1.png";
+import aliRestoImg2 from "./assets/projects/ali-2.png";
+import aliRestoImg3 from "./assets/projects/ali-3.png";
+import aliRestoImg4 from "./assets/projects/ali-4.png";
+import portfolioImg1 from "./assets/projects/portfolio-1.png";
+import portfolioImg2 from "./assets/projects/portfolio-2.png";
+import portfolioImg3 from "./assets/projects/portfolio-3.png";
+import portfolioImg4 from "./assets/projects/portfolio-4.png";
+import portfolioImg5 from "./assets/projects/portfolio-5.png";
 
 /* ────────────────────────────────────────────────────────────
    PROJECT SCREENSHOTS — add yours here.
@@ -71,7 +79,7 @@ const NAME = "Baudoin Adjadji";
    translating "Laravel" or "MySQL" would be wrong, not helpful. ── */
 const CONTENT = {
   en: {
-    nav: ["Home", "About", "Skills", "Projects", "Certifications", "Contact"],
+    nav: ["Home", "About", "Skills", "Projects", "Certifications", "CV", "Contact"],
     availability: "available for freelance work",
     greeting: "Hi, I'm Baudoin ",
     roles: ["build web apps.", "build mobile apps.", "secure them."],
@@ -92,10 +100,10 @@ const CONTENT = {
     skillsEyebrow: "Toolbox",
     skillsTitle: "Skills",
     skillCategories: [
-      { name: "Frontend", items: ["HTML5", "CSS3", "JavaScript", "Bootstrap"] },
+      { name: "Frontend", items: ["HTML5", "CSS3", "JavaScript", "React", "Bootstrap"] },
       { name: "Backend", items: ["PHP", "Laravel", "MySQL"] },
       { name: "Mobile", items: ["Flutter", "Dart"] },
-      { name: "CMS & E-commerce", items: ["WordPress", "Shopify", "WooCommerce", "PrestaShop"] },
+      { name: "CMS & E-commerce", items: ["WordPress", "Shopify", "WooCommerce"] },
       { name: "Tools", items: ["Git", "GitHub", "VS Code", "Figma", "Canva"] },
     ],
     projectsEyebrow: "Selected work",
@@ -112,14 +120,24 @@ const CONTENT = {
         images: [pharmanetImg1, pharmanetImg2, pharmanetImg3, pharmanetImg4, pharmanetImg5],
       },
       {
+        name: "Ali_Resto",
+        type: "Mobile Application",
+        description:
+          "A mobile application for a restaurant, allowing users to browse the menu, make reservations, and place orders.",
+        tech: ["Flutter", "Dart", "Firebase"],
+        features: ["Menu browsing", "Table reservation", "Database design", "Online ordering"],
+        // TODO: replace with your imported screenshots, e.g. [aliRestoImg1, aliRestoImg2, aliRestoImg3]
+        images: [aliRestoImg1, aliRestoImg2, aliRestoImg3, aliRestoImg4],
+      },
+      {
         name: "Personal Portfolio",
         type: "Web Application",
         description:
           "This site — a responsive portfolio built to present my work, skills and professional journey clearly, without noise.",
-        tech: ["HTML", "CSS", "JavaScript"],
+        tech: ["React", "Tailwind CSS", "JavaScript"],
         features: [],
         // TODO: replace with your imported screenshots, e.g. [portfolioImg1]
-        images: [],
+        images: [portfolioImg1, portfolioImg2, portfolioImg3, portfolioImg4, portfolioImg5],
       },
     ],
     viewProject: "View",
@@ -142,7 +160,7 @@ const CONTENT = {
   },
 
   fr: {
-    nav: ["Accueil", "À propos", "Compétences", "Projets", "Certifications", "Contact"],
+    nav: ["Accueil", "À propos", "Compétences", "Projets", "Certifications", "CV", "Contact"],
     availability: "disponible pour des missions freelance",
     greeting: "Salut, je suis Baudoin ",
     roles: ["développe des apps web.", "développe des apps mobiles.", " les sécurise."],
@@ -163,10 +181,10 @@ const CONTENT = {
     skillsEyebrow: "Boîte à outils",
     skillsTitle: "Compétences",
     skillCategories: [
-      { name: "Frontend", items: ["HTML5", "CSS3", "JavaScript", "Bootstrap"] },
+      { name: "Frontend", items: ["HTML5", "CSS3", "JavaScript", "React", "Bootstrap"] },
       { name: "Backend", items: ["PHP", "Laravel", "MySQL"] },
       { name: "Mobile", items: ["Flutter", "Dart"] },
-      { name: "CMS & E-commerce", items: ["WordPress", "Shopify", "WooCommerce", "PrestaShop"] },
+      { name: "CMS & E-commerce", items: ["WordPress", "Shopify", "WooCommerce"] },
       { name: "Outils", items: ["Git", "GitHub", "VS Code", "Figma", "Canva"] },
     ],
     projectsEyebrow: "Travaux sélectionnés",
@@ -179,18 +197,26 @@ const CONTENT = {
           "Une plateforme de gestion et de mise en réseau de pharmacies, connectant pharmacies, administrateurs et clients au sein d'un même écosystème numérique — catalogue, rôles et données réunis en un seul endroit.",
         tech: ["Laravel", "PHP", "MySQL", "Bootstrap"],
         features: ["Authentification", "Gestion des rôles", "Conception base de données", "Catalogue pharmacie"],
-        // TODO: mêmes images que la version EN, ex. [pharmanetImg1, pharmanetImg2, pharmanetImg3]
         images: [pharmanetImg1, pharmanetImg2, pharmanetImg3, pharmanetImg4, pharmanetImg5],
+      },
+      {
+        name: "Ali_Resto",
+        type: "Application Mobile",
+        description:
+          "Une application mobile pour un restaurant.",
+        tech: ["Flutter", "Dart", "Firebase"],
+        features: ["Recherche menu", "Reservation de tables", "Conception base de données", "Commande en ligne"],
+        images: [aliRestoImg1, aliRestoImg2, aliRestoImg3, aliRestoImg4],
       },
       {
         name: "Portfolio Personnel",
         type: "Application Web",
         description:
           "Ce site — un portfolio responsive conçu pour présenter clairement mon travail, mes compétences et mon parcours professionnel, sans superflu.",
-        tech: ["HTML", "CSS", "JavaScript"],
+        tech: ["React", "Tailwind CSS", "JavaScript"],
         features: [],
         // TODO: mêmes images que la version EN, ex. [portfolioImg1]
-        images: [],
+        images: [portfolioImg1, portfolioImg2, portfolioImg3, portfolioImg4, portfolioImg5],
       },
     ],
     viewProject: "Voir",
@@ -603,74 +629,101 @@ export default function Portfolio() {
 
       {/* ── NAVBAR ───────────────────────────────────────── */}
       <header
-        className="fixed top-0 left-0 right-0 z-50"
-        style={{
-          background: "rgba(15,23,42,0.85)",
-          backdropFilter: "blur(12px)",
-          borderBottom: `1px solid ${COLORS.line}`,
-        }}
-      >
-        <div className="max-w-full px-6 h-16 flex items-center justify-between">
-          <button
-            onClick={() => scrollTo("home")}
-            className="heading text-lg font-semibold tracking-tight"
-            style={{ color: COLORS.text }}
+  className="fixed top-0 left-0 right-0 z-50"
+  style={{
+    background: "rgba(15,23,42,0.85)",
+    backdropFilter: "blur(12px)",
+    borderBottom: `1px solid ${COLORS.line}`,
+  }}
+>
+  <div className="max-w-full px-6 h-16 flex items-center justify-between">
+    <button
+      onClick={() => scrollTo("home")}
+      className="heading text-lg font-semibold tracking-tight"
+      style={{ color: COLORS.text }}
+    >
+      {HANDLE}
+      <span style={{ color: COLORS.secondary }}>.</span>
+    </button>
+
+    <nav className="hidden md:flex items-center gap-8">
+      {c.nav.map((item, i) =>
+        CONTENT.en.nav[i].toLowerCase() === "cv" ? (
+          <a
+            key={item}
+            href="cv.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="nav-link text-sm"
+            style={{ color: COLORS.muted }}
           >
-            {HANDLE}
-            <span style={{ color: COLORS.secondary }}>.</span>
+            {item}
+          </a>
+        ) : (
+          <button
+            key={item}
+            onClick={() => scrollTo(CONTENT.en.nav[i].toLowerCase())}
+            className="nav-link text-sm"
+            style={{ color: COLORS.muted }}
+          >
+            {item}
           </button>
+        )
+      )}
+    </nav>
 
-          <nav className="hidden md:flex items-center gap-8">
-            {c.nav.map((item, i) => (
-              <button
-                key={item}
-                onClick={() => scrollTo(CONTENT.en.nav[i].toLowerCase())}
-                className="nav-link text-sm"
-                style={{ color: COLORS.muted }}
-              >
-                {item}
-              </button>
-            ))}
-          </nav>
+    <div className="flex items-center gap-3">
+      <button
+        onClick={toggleLang}
+        className="lang-toggle mono text-xs px-3 py-1.5 rounded-full inline-flex items-center gap-1.5"
+        style={{ border: `1px solid ${COLORS.line}`, color: COLORS.text }}
+        aria-label="Switch language / Changer de langue"
+        title="Switch language / Changer de langue"
+      >
+        <Languages size={13} />
+        {c.langToggleLabel}
+      </button>
 
-          <div className="flex items-center gap-3">
-            <button
-              onClick={toggleLang}
-              className="lang-toggle mono text-xs px-3 py-1.5 rounded-full inline-flex items-center gap-1.5"
-              style={{ border: `1px solid ${COLORS.line}`, color: COLORS.text }}
-              aria-label="Switch language / Changer de langue"
-              title="Switch language / Changer de langue"
-            >
-              <Languages size={13} />
-              {c.langToggleLabel}
-            </button>
+      <button
+        className="md:hidden text-sm mono"
+        style={{ color: COLORS.text }}
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Toggle menu"
+      >
+        {menuOpen ? "×" : "≡"}
+      </button>
+    </div>
+  </div>
 
-            <button
-              className="md:hidden text-sm mono"
-              style={{ color: COLORS.text }}
-              onClick={() => setMenuOpen(!menuOpen)}
-              aria-label="Toggle menu"
-            >
-              {menuOpen ? "×" : "≡"}
-            </button>
-          </div>
-        </div>
-
-        {menuOpen && (
-          <div className="md:hidden px-6 pb-5 flex flex-col gap-4" style={{ borderTop: `1px solid ${COLORS.line}` }}>
-            {c.nav.map((item, i) => (
-              <button
-                key={item}
-                onClick={() => scrollTo(CONTENT.en.nav[i].toLowerCase())}
-                className="text-sm text-left pt-3"
-                style={{ color: COLORS.muted }}
-              >
-                {item}
-              </button>
-            ))}
-          </div>
-        )}
-      </header>
+  {menuOpen && (
+    <div className="md:hidden px-6 pb-5 flex flex-col gap-4" style={{ borderTop: `1px solid ${COLORS.line}` }}>
+      {c.nav.map((item, i) =>
+        CONTENT.en.nav[i].toLowerCase() === "cv" ? (
+          <a
+            key={item}
+            href="cv.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-left pt-3"
+            style={{ color: COLORS.muted }}
+            onClick={() => setMenuOpen(false)}
+          >
+            {item}
+          </a>
+        ) : (
+          <button
+            key={item}
+            onClick={() => scrollTo(CONTENT.en.nav[i].toLowerCase())}
+            className="text-sm text-left pt-3"
+            style={{ color: COLORS.muted }}
+          >
+            {item}
+          </button>
+        )
+      )}
+    </div>
+  )}
+</header>
 
       {/* ── HERO ─────────────────────────────────────────── */}
       <section id="home" className="w-full relative overflow-hidden pt-40 pb-24 px-6">
@@ -1013,7 +1066,7 @@ export default function Portfolio() {
             <a href="https://github.com/baudoindev" aria-label="GitHub" style={{ color: COLORS.muted }}>
               <FaGithub size={16} />
             </a>
-            <a href="https://www.linkedin.com/in/baudoin-adjadji/" aria-label="LinkedIn" style={{ color: COLORS.muted }}>
+            <a href="https://www.linkedin.com/in/baudoin-adjadji-a939052b4/" aria-label="LinkedIn" style={{ color: COLORS.muted }}>
               <FaLinkedin size={16} />
             </a>
             <a href={`mailto:${EMAIL}`} aria-label="Email" style={{ color: COLORS.muted }}>
